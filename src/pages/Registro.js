@@ -8,6 +8,9 @@ export default function Login() {
     window.location.href('/');
     window.location.reload();
   };
+  const Regis = () =>{
+    alert("Usuario Registrado correctamente!!!")
+  }
   return (
     <>
       <meta charSet="UTF-8" />
@@ -31,26 +34,28 @@ export default function Login() {
           </div>
           {/* formulario de login y registro */}
           <div className="contenedor_login-registro">
-            <form action="" method="" className="formulario_registro">
+            <form className="formulario_registro">
               <h2>Registrarse</h2>
               <RegistroGoogle></RegistroGoogle>
               <input
                 type="text"
                 placeholder="Nombre Completo"
-                name="nombre_completo"
+                
               />
               <input type="text" placeholder="Usuario" name="usuario" />
               <input
                 type="email"
                 placeholder="Correo Electronico"
-                name="correo"
+                
               />
               <input
                 type="password"
                 placeholder="Contraseña"
-                name="contrasena"
+                
               />
-              <button>Registrarse</button>
+              <Link to={'/'}>
+              <button onClick={Regis}>Registrarse</button>
+              </Link>
             </form>
           </div>
         </div>

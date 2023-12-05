@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const login = require('./Router/loginRouter')
 const newUser = require('./Router/usuarioRouter');
-const redes = require('./Router/redesRouter')
+// const redes = require('./Router/redesRouter')
 
 
 
@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/login", login);
 app.use("/newUser", newUser);
-app.use("/redes", redes);
+// app.use("/redes", redes);
 
 
 
